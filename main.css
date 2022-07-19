@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+body {
+  background: #303236;
+  font-family: "Mulish", sans-serif;
+}
+
+.component--search {
+  background: #3D3F43;
+  border-radius: 15px;
+  padding: 40px 45px;
+}
+.component--search form {
+  position: relative;
+  margin-bottom: 30px;
+}
+.component--search form .search-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 53px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.component--search form input {
+  height: 50px;
+  width: 100% 0;
+  background: #303236;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  caret-color: red;
+  padding-left: 53px;
+}
+.component--search form input:focus {
+  outline: 0;
+}
+.component--search form input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--search form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--search form input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--search h6 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+.component--search ul {
+  margin-top: 13px;
+  margin-left: -40px;
+}
+.component--search ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 7px 0;
+}
+.component--search ul li a:hover {
+  color: #2CCDEA;
+  font-weight: bold;
+}
+.component--search ul li.active a {
+  color: #2CCDEA;
+  font-weight: bold;
+}
+
+.component--filter-search {
+  background: #3D3F43;
+  border-radius: 5px;
+}
+.component--filter-search form {
+  height: 68px;
+  padding: 14px;
+  display: flex;
+}
+.component--filter-search form .input {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.component--filter-search form .input .search-icon {
+  width: 50px;
+  text-align: center;
+}
+.component--filter-search form .input input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  caret-color: red;
+}
+.component--filter-search form .input input:focus {
+  outline: 0;
+}
+.component--filter-search form .input input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--filter-search form .input input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--filter-search form .input input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--filter-search form ul {
+  display: flex;
+  margin-left: 15px;
+}
+.component--filter-search form ul li label .text {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 25px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+.component--filter-search form ul li label input {
+  display: none;
+}
+.component--filter-search form ul li label input:checked + .text {
+  background-color: #303236;
+  color: #2CCDEA;
+}
+
+.component--filter {
+  background: #3D3F43;
+  border-radius: 15px;
+  padding: 40px 45px;
+}
+.component--filter form ul li {
+  display: flex;
+  align-items: center;
+}
+.component--filter form ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.component--filter form ul li .key {
+  width: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+.component--filter form ul li .value {
+  flex: 1;
+}
+.component--filter form ul li .value input, .component--filter form ul li .value select {
+  margin: 0;
+  height: 50px;
+  width: 100%;
+  background: #303236;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 20px;
+}
+.component--filter form ul li .value input:focus, .component--filter form ul li .value select:focus {
+  outline: 0;
+}
+.component--filter form ul li .value input::-moz-placeholder, .component--filter form ul li .value select::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--filter form ul li .value input:-ms-input-placeholder, .component--filter form ul li .value select:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--filter form ul li .value input::placeholder, .component--filter form ul li .value select::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.component--filter form ul li .value select {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #303236 url(img/arrow-down.svg) no-repeat calc(100% - 30px) center;
+}
+.component--filter form ul li.filter-button {
+  margin-top: 40px;
+  border-top: 1px solid #303236;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.component--filter form ul li.filter-button a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 16px;
+}
+.component--filter form ul li.filter-button a:hover {
+  color: #fff;
+}
+.component--filter form ul li.filter-button button {
+  height: 50px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #31A5D9, #1E96A0);
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 7px 10px 0 rgba(43, 45, 48, 0.5);
+}/*# sourceMappingURL=main.css.map */
